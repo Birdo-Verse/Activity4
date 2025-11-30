@@ -50,3 +50,16 @@ CREATE TABLE medicalrecords (
     FOREIGN KEY (animalid) REFERENCES animals(animalid),
     FOREIGN KEY (doctorid) REFERENCES doctors(doctorid)
 );
+
+INSERT INTO owners (ownerid, ofirstname, olastname, address, phone, email) VALUES
+(1, 'Count', 'Dracula', '666 Transylvania Lane, Bat City', '0917-BLOOD', 'batguy@nightmail.com'),
+(2, 'Princess', 'Leia Organa', '404 Galaxy Way, Star Base', '0918-FORCE', 'leia.o@rebelmail.net'),
+(3, 'Mr.', 'Snugglesworth', '789 Cozy Blanket Dr, Napville', '0919-ZZZ', 'sleepy.time@dream.org'),
+(4, 'Salty', 'McFishface', '101 Seaweed Ln, Aquarium Heights', '0920-GILL', 'salty.mcf@watermail.com'),
+(5, 'Dr.', 'Evil', '202 Volcano Lair, Secret Island', '0921-MINIMI', 'dre.vil@doombase.com'),
+(6, 'Sheldon', 'Cooper', '303 Apartment 4A, Pasadena', '0922-BAZINGA', 'sh.cooper@scimail.edu'),
+(7, 'Wanda', 'Vision', '404 Reality Dr, Westview', '0923-MAGIC', 'wanda.vision@hex.com'),
+(8, 'Bartholomew', 'Jellybean', '505 Rainbow Rd, Candy Land', '0924-GUMMY', 'barty.jelly@sweets.com'),
+(9, 'Mildred', 'Pancake', '606 Maple Syrup St, Breakfast Town', '0925-FLAPJ', 'm.pancake@syrup.com'),
+(10, 'Indiana', 'Bones', '707 Archaeology Site, Ancient City', '0926-TREASURE', 'indy.bones@artifact.net');
+
