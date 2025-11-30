@@ -76,3 +76,16 @@ VALUES
 (8, 'Simba', 'Cat', 'Bengal', '2021-06-15', 'Male', 'Orange', 8),
 (9, 'Daisy', 'Dog', 'German Shepherd', '2020-08-18', 'Female', 'Black', 9),
 (10, 'Oliver', 'Cat', 'Ragdoll', '2022-02-22', 'Male', 'Grey', 10);
+
+INSERT INTO animals (animalid, name, species, breed, dateofbirth, gender, color, ownerid)
+VALUES
+(1, 'Whiskers', 'Cat', 'Siamese', '2021-03-15', 'Male', 'Cream', 1),
+(2, 'Bella', 'Dog', 'Labrador', '2020-07-20', 'Female', 'Black', 2),
+(3, 'Max', 'Dog', 'Beagle', '2019-05-10', 'Male', 'Brown', 3),
+(4, 'Luna', 'Cat', 'Persian', '2022-01-05', 'Female', 'White', 4),
+(5, 'Charlie', 'Dog', 'Bulldog', '2021-12-12', 'Male', 'Grey', 5),
+(6, 'Milo', 'Cat', 'Maine Coon', '2020-09-25', 'Male', 'Brown', 6),
+(7, 'Lucy', 'Dog', 'Poodle', '2019-11-30', 'Female', 'White', 7),
+(8, 'Simba', 'Cat', 'Bengal', '2021-06-15', 'Male', 'Orange', 8),
+(9, 'Daisy', 'Dog', 'German Shepherd', '2020-08-18', 'Female', 'Black', 9),
+(10, 'Oliver', 'Cat', 'Ragdoll', '2022-02-22', 'Male', 'Grey', 10);
