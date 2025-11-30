@@ -103,16 +103,16 @@ VALUES
 (10, 'Dr.Ethan', 'Sapuay', 'Emergency Care Specialist', '777-666-5555', 'ethan@example.com');
 
 INSERT INTO invoices (invoiceid, appointid, totalamount, paymentdate) VALUES
-(1, 1, 1500.00, '2023-11-01 11:30:00'), -- to Whiskers' checkup
-(2, 2, 2500.00, '2023-11-05 15:00:00'), -- to Bella's vaccination
-(3, 3, 3500.00, '2023-11-08 12:00:00'), -- to Max's limping check
-(4, 4, 4500.00, '2023-11-10 13:00:00'), -- to Luna's dental cleaning
-(5, 5, 2200.00, '2023-11-14 16:00:00'), -- to Charlie's rash evaluation
-(6, 6, 1800.00, '2023-11-18 17:30:00'), -- to Milo's hairball issue
-(7, 7, 2800.00, '2023-11-20 14:30:00'), -- to Lucy's ear infection check
-(8, 8, 6000.00, '2023-11-25 11:30:00'), -- to Simba's spay consultation
-(9, 9, 3200.00, '2023-11-28 13:00:00'), -- to Daisy's fever/lethargy check
-(10, 10, 1500.00, '2023-12-01 16:30:00');--to Oliver's wellness exam
+(1, 1, 50.00, '2023-11-01 11:30:00'), -- to Whiskers' checkup
+(2, 2, 75.00, '2023-11-05 15:00:00'), -- to Bella's vaccination
+(3, 3, 100.00, '2023-11-08 12:00:00'), -- to Max's limping check
+(4, 4, 200.00, '2023-11-10 13:00:00'), -- to Luna's dental cleaning
+(5, 5, 80.00, '2023-11-14 16:00:00'), -- to Charlie's rash evaluation
+(6, 6, 30.00, '2023-11-18 17:30:00'), -- to Milo's hairball issue
+(7, 7, 75.00, '2023-11-20 14:30:00'), -- to Lucy's ear infection check
+(8, 8, 150.00, '2023-11-25 11:30:00'), -- to Simba's spay consultation
+(9, 9, 600.00, '2023-11-28 13:00:00'), -- to Daisy's fever/lethargy check
+(10, 10, 400.00, '2023-12-01 16:30:00');--to Oliver's wellness exam
 
 INSERT INTO medicalrecords (recordid, animalid, recorddate, doctorid, diagnosis, prescription, notes) VALUES 
 (1, 1, '2023-01-05 00:00:00', 1, 'Health check', 'N/A', 'Regular checkup, no issue detected'),
@@ -125,3 +125,7 @@ INSERT INTO medicalrecords (recordid, animalid, recorddate, doctorid, diagnosis,
 (8, 8, '2023-04-18 00:00:00', 5, 'Spaying', 'N/A', 'Successfully performed spaying surgery'),
 (9, 9, '2023-05-02 00:00:00', 4, 'Allergic reaction', 'Antihistamines', 'Allergic reaction due to food prescribed antihistamine'),
 (10, 10, '2023-05-20 00:00:00', 6, 'Conjunctivitis', 'Eye drops', 'Prescribed eye drops for conjunctivitis');
+
+ALTER TABLE owners
+ADD registereddate DATE;
+
