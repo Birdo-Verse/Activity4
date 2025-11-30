@@ -102,3 +102,14 @@ VALUES
 (9, 'Dr.Miguel', 'Patio', 'Cardiology Specialist', '988-757-6766', 'miguel@example.com'),
 (10, 'Dr.Ethan', 'Sapuay', 'Emergency Care Specialist', '777-666-5555', 'ethan@example.com');
 
+INSERT INTO invoices (invoiceid, appointid, totalamount, paymentdate) VALUES
+(1, 1, 1500.00, '2023-11-01 11:30:00'), -- to Whiskers' checkup
+(2, 2, 2500.00, '2023-11-05 15:00:00'), -- to Bella's vaccination
+(3, 3, 3500.00, '2023-11-08 12:00:00'), -- to Max's limping check
+(4, 4, 4500.00, '2023-11-10 13:00:00'), -- to Luna's dental cleaning
+(5, 5, 2200.00, '2023-11-14 16:00:00'), -- to Charlie's rash evaluation
+(6, 6, 1800.00, '2023-11-18 17:30:00'), -- to Milo's hairball issue
+(7, 7, 2800.00, '2023-11-20 14:30:00'), -- to Lucy's ear infection check
+(8, 8, 6000.00, '2023-11-25 11:30:00'), -- to Simba's spay consultation
+(9, 9, 3200.00, '2023-11-28 13:00:00'), -- to Daisy's fever/lethargy check
+(10, 10, 1500.00, '2023-12-01 16:30:00');--to Oliver's wellness exam
