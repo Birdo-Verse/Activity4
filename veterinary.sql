@@ -77,15 +77,14 @@ VALUES
 (9, 'Daisy', 'Dog', 'German Shepherd', '2020-08-18', 'Female', 'Black', 9),
 (10, 'Oliver', 'Cat', 'Ragdoll', '2022-02-22', 'Male', 'Grey', 10);
 
-INSERT INTO animals (animalid, name, species, breed, dateofbirth, gender, color, ownerid)
-VALUES
-(1, 'Whiskers', 'Cat', 'Siamese', '2021-03-15', 'Male', 'Cream', 1),
-(2, 'Bella', 'Dog', 'Labrador', '2020-07-20', 'Female', 'Black', 2),
-(3, 'Max', 'Dog', 'Beagle', '2019-05-10', 'Male', 'Brown', 3),
-(4, 'Luna', 'Cat', 'Persian', '2022-01-05', 'Female', 'White', 4),
-(5, 'Charlie', 'Dog', 'Bulldog', '2021-12-12', 'Male', 'Grey', 5),
-(6, 'Milo', 'Cat', 'Maine Coon', '2020-09-25', 'Male', 'Brown', 6),
-(7, 'Lucy', 'Dog', 'Poodle', '2019-11-30', 'Female', 'White', 7),
-(8, 'Simba', 'Cat', 'Bengal', '2021-06-15', 'Male', 'Orange', 8),
-(9, 'Daisy', 'Dog', 'German Shepherd', '2020-08-18', 'Female', 'Black', 9),
-(10, 'Oliver', 'Cat', 'Ragdoll', '2022-02-22', 'Male', 'Grey', 10);
+INSERT INTO appointments (appointid, animalid, appointdate, reason) VALUES
+(1, 1, '2023-11-01', 'Routine checkup for Whiskers the Siamese Cat'),
+(2, 2, '2023-11-05', 'Vaccination Booster for Bella the Labrador Dog'),
+(3, 3, '2023-11-08', 'Limping after play for Max the Beagle Dog'),
+(4, 4, '2023-11-10', 'Annual Dental Cleaning for Luna the Persian Cat'),
+(5, 5, '2023-11-14', 'Skin rash evaluation for Charlie the Bulldog Dog'),
+(6, 6, '2023-11-18', 'Hairball issue for Milo the Maine Coon Cat'),
+(7, 7, '2023-11-20', 'Ear infection check for Lucy the Poodle Dog'),
+(8, 8, '2023-11-25', 'Spay surgery consultation for Simba the Bengal Cat'),
+(9, 9, '2023-11-28', 'Fever/Lethargy check for Daisy the German Shepherd Dog'),
+(10, 10, '2023-12-01', 'General Wellness Exam for Oliver the Ragdoll Cat');
