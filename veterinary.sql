@@ -156,15 +156,10 @@ SELECT SUM(totalamount) AS total_sales
 FROM invoices;
 
 SELECT
-    O.ofirstname || ' ' || O.olastname AS OwnerName,
-    A.name AS PetName,
-    A.species AS PetSpecies,
-    P.appointdate AS AppointmentDate,
-    P.reason AS AppointmentReason
+    o.ofirstname,
+    o.olastname,
+    a.name AS pet_name 
 FROM
-    owners O
-INNER JOIN
-    animals A ON O.ownerid = A.ownerid
-INNER JOIN
-    appointments P ON A.animalid = P.animalid;
-
+    owners o         
+JOIN
+    animals a ON o.ownerid = a.ownerid;
