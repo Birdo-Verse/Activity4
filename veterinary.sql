@@ -155,7 +155,8 @@ FROM animals;
 SELECT SUM(totalamount) AS total_sales
 FROM invoices;
 
-SELECT
+
+SELECT&&&
     o.ofirstname,
     o.olastname,
     a.name AS pet_name 
