@@ -164,11 +164,17 @@ FROM
 JOIN
     animals a ON o.ownerid = a.ownerid;
 
-SELECT an.name, COUNT(*) AS total_appointments
+SELECT LOWER(an.name) AS name
 FROM appointments a
 JOIN animals an ON a.animalid = an.animalid
 GROUP BY an.name
-ORDER BY total_appointments DESC
-LIMIT 1;
+HAVING COUNT(*) = (
+    SELECT MAX(app_count)
+    FROM (
+        SELECT COUNT(*) AS app_count
+        FROM appointments
+        GROUP BY animalid
+    ) sub
+);
 
 
