@@ -52,7 +52,7 @@ CREATE TABLE invoices (
 CREATE TABLE medicalrecords (
     recordid INT PRIMARY KEY,
     animalid INT,
-    recorddate DATETIME,
+    recorddate TIMESTAMP,
     doctorid INT,
     diagnosis VARCHAR(100),
     prescription VARCHAR(100),
