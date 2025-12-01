@@ -149,7 +149,3 @@ UPDATE doctors
 SET dlastname = 'Reyes-Gonzales'
 WHERE dlastname = 'Reyes';
 
-SELECT DISTINCT species
-FROM animals;
-
-
